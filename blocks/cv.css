@@ -21,15 +21,18 @@
 }
 
 .cv__title {
-  width: 200px;
+  max-width: 100%;
   text-align: center;
   padding: 10px 0 10px 0;
   margin: 0;
+  font-size: 32px;
 }
 
 .cv__subtitle {
+  max-width: 100%;
   padding: 0;
   margin: 0;
+  font-size: 20px;
 }
 
 .cv__photo {
@@ -72,12 +75,15 @@
 
 .cv__headline {
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px;
+  font-size: 24px;
 }
 
 .cv__paragraph {
+  max-width: 320px;
   padding: 0;
   margin: 0;
+  font-size: 20px;
 }
 
 .cv__menu {
