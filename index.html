@@ -59,31 +59,66 @@
         </div>
         <div class="cv__main">
           <div class="cv__column">
-            <h3 class="cv__headline">Background</h3>
-            <p class="cv__paragraph">
-              Terry was raised in a an area of greater Boston. Terry has made a few attempts to become a programmer and
-              tried out different online courses and bootcamps but never succeeded. Then, he met Elise, a programming
-              guru. So now he's grown more serious about it and hopes to make it all the way through Practicum. However,
-              his motivation can be a little unstable and he often gets distracted by his versatile other interests in
-              life.
-            </p>
+            <div id="send-resume-paragraph" class="cv__paragraph-container cv__paragraph-container_hidden">
+              <form class="cv__send-email-form">
+              <h3 class="cv__headline">Send my resume to</h3>
+              <p class="cv__paragraph">
+                <input type="text" class="cv__email-input">
+                <button type="submit">Send</button>
+              </p>
+            </form>
+            </div>
+            <div id="email-message" class="cv__paragraph-container cv__paragraph-container_hidden">
+              <h3 class="cv__headline">Email send!</h3>
+            </div>
+            <div id="about-me-paragraph" class="cv__paragraph-container">
+              <h3 class="cv__headline">About Me</h3>
+              <p class="cv__paragraph">
+                <p>Age: 28</p>
+                <p>Hometown: Quincy, Massachusetts</p>
+                <p>Address 88 Some Street, Some Town</p>
+                <p>e-mail email@practicum.com</p>
+                <p>Phone: +0123 123 456 789</p>
+              </p>
+            </div>
+            <div id="hobbies-paragraph" class="cv__paragraph-container">
+              <h2 class="cv__headline">Hobbies</h2>
+              <p class="cv__paragraph">
+                <ul>
+                  <li>Listens to a lot of podcasts on history & politics</li>
+                  <li>Reads sci-fi</li>
+                  <li>Runs a TikTok blog of his pet goat</li>
+                  <li>Volunteers at an animal shelter</li>
+                  <li>enjoys gardening</li>
+                  <li>is into calligraphy & embroidery (likes tedious work and pays attention to details)</li>
+                   <li>watches "Dragon Ball Z" with his nephews & nieces after school -
+                      used to be a DJ</li>
+                </ul>
+              </p>
+            </div>
           </div>
           <div class="cv__column">
-            <h2 class="cv__headline">Hobbies</h2>
-            <p class="cv__paragraph">
-              - listens to a lot of podcasts on history & politics - reads sci-fi - runs a TikTok blog of his pet goat -
-              volunteers at an animal shelter - enjoys gardening - is into calligraphy & embroidery (likes tedious work
-              and pays attention to details) - watches "Dragon Ball Z" with his nephews & nieces after school - used to
-              be a DJ
-            </p>
+            <div id="emotional-life-paragraph" class="cv__paragraph-container">
+              <h2 class="cv__headline">Emotional life</h2>
+              <p class="cv__paragraph">
+                People know him is a party animal but actually Terry really enjoys some alone time in his garden or walking around graveyards.
+
+                Terry is adventurous and considers himself lucky. For example, he mined some Bitcoin in the early 2010s and that bought him a house a few years later.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="cv__menu">
-        <img src="./images/graduation-cap.svg" class="cv__menu-icon" alt="Open book icon" />
-        <img src="./images/envelope.svg" class="cv__menu-icon" alt="Envelope icon" />
+        <button id="studies-button" type="button" class="cv__link-button cv__link-button_active">
+          <img src="./images/graduation-cap.svg" class="cv__menu-icon" alt="Open book icon" />
+        </button>
+        <button id="send-email-button" type="button" class="cv__link-button">
+          <img src="./images/envelope.svg" class="cv__menu-icon" alt="Envelope icon" />
+        </button>
       </div>
     </section>
     <section class="gallery"></section>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
