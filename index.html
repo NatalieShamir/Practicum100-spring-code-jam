@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/vendor/normalize.css" />
-    <link rel="stylesheet" href="/pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Character Landing Page</title>
   </head>
   <body class="page">
@@ -32,88 +31,105 @@
         </ul>
       </nav>
     </header>
-    <main class="content"></main>
-    <section class="about">
-      <img
-        class="about__image"
-        src="./images/Terrychill.png"
-        alt="An illustration of Terrence Shlomo Tegegne casually lying on his stomach"
-      />
-      <h2 class="about__title">About Me</h2>
-      <div class="about__content">
-        <p class="about__paragraph">
-          People know me as a party animal but actually I really enjoy some
-          alone time in my garden or walking around graveyards.
-        </p>
-        <p class="about__paragraph">
-          I am adventurous and considers myself lucky. For example, I mined some
-          Bitcoin in the early 2010s and that bought me a house a few years
-          later.
-        </p>
-      </div>
-    </section>
-    <section class="cv">
-      <div class="cv__content">
-        <div class="cv__profile">
+    <main class="content">
+      <section class="about">
+        <img
+          class="about__image"
+          src="./images/Terrychill.png"
+          alt="An illustration of Terrence Shlomo Tegegne casually lying on his stomach"
+        />
+        <h2 class="about__title">About Me</h2>
+        <div class="about__content">
+          <p class="about__paragraph">
+            People know me as a party animal but actually I really enjoy some
+            alone time in my garden or walking around graveyards.
+          </p>
+          <p class="about__paragraph">
+            I am adventurous and considers myself lucky. For example, I mined some
+            Bitcoin in the early 2010s and that bought me a house a few years
+            later.
+          </p>
+        </div>
+      </section>
+      <section class="cv">
+        <div class="cv__content">
+          <div class="cv__profile">
+            <img
+              src="./images/Terrysmile.png"
+              alt="Terry profile picture"
+              class="cv__photo"
+            />
+            <h2 class="cv__title">Terrence Shlomo Tegegne</h2>
+            <p class="cv__subtitle">freelance UX designer</p>
+            <div class="cv__icons">
+              <img
+                class="cv__icon"
+                src="./images/facebook-icon.svg"
+                alt="Facebook icon"
+              />
+              <img
+                class="cv__icon"
+                src="./images/twitter-icon.svg"
+                alt="Facebook icon"
+              />
+            </div>
+          </div>
+          <div class="cv__main">
+            <div class="cv__column">
+              <h3 class="cv__headline">Background</h3>
+              <p class="cv__paragraph">
+                Terry was raised in a an area of greater Boston. Terry has made a
+                few attempts to become a programmer and tried out different online
+                courses and bootcamps but never succeeded. Then, he met Elise, a
+                programming guru. So now he's grown more serious about it and
+                hopes to make it all the way through Practicum. However, his
+                motivation can be a little unstable and he often gets distracted
+                by his versatile other interests in life.
+              </p>
+            </div>
+            <div class="cv__column">
+              <h2 class="cv__headline">Hobbies</h2>
+              <p class="cv__paragraph">
+                - listens to a lot of podcasts on history & politics - reads
+                sci-fi - runs a TikTok blog of his pet goat - volunteers at an
+                animal shelter - enjoys gardening - is into calligraphy &
+                embroidery (likes tedious work and pays attention to details) -
+                watches "Dragon Ball Z" with his nephews & nieces after school -
+                used to be a DJ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cv__menu">
           <img
-            src="./images/Terrysmile.png"
-            alt="Terry profile picture"
-            class="cv__photo"
+            src="./images/graduation-cap.svg"
+            class="cv__menu-icon"
+            alt="Open book icon"
           />
-          <h2 class="cv__title">Terrence Shlomo Tegegne</h2>
-          <p class="cv__subtitle">freelance UX designer</p>
-          <div class="cv__icons">
-            <img
-              class="cv__icon"
-              src="./images/facebook-icon.svg"
-              alt="Facebook icon"
-            />
-            <img
-              class="cv__icon"
-              src="./images/twitter-icon.svg"
-              alt="Facebook icon"
-            />
-          </div>
+          <img
+            src="./images/envelope.svg"
+            class="cv__menu-icon"
+            alt="Envelope icon"
+          />
         </div>
-        <div class="cv__main">
-          <div class="cv__column">
-            <h3 class="cv__headline">Background</h3>
-            <p class="cv__paragraph">
-              Terry was raised in a an area of greater Boston. Terry has made a
-              few attempts to become a programmer and tried out different online
-              courses and bootcamps but never succeeded. Then, he met Elise, a
-              programming guru. So now he's grown more serious about it and
-              hopes to make it all the way through Practicum. However, his
-              motivation can be a little unstable and he often gets distracted
-              by his versatile other interests in life.
-            </p>
-          </div>
-          <div class="cv__column">
-            <h2 class="cv__headline">Hobbies</h2>
-            <p class="cv__paragraph">
-              - listens to a lot of podcasts on history & politics - reads
-              sci-fi - runs a TikTok blog of his pet goat - volunteers at an
-              animal shelter - enjoys gardening - is into calligraphy &
-              embroidery (likes tedious work and pays attention to details) -
-              watches "Dragon Ball Z" with his nephews & nieces after school -
-              used to be a DJ
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="cv__menu">
-        <img
-          src="./images/graduation-cap.svg"
-          class="cv__menu-icon"
-          alt="Open book icon"
-        />
-        <img
-          src="./images/envelope.svg"
-          class="cv__menu-icon"
-          alt="Envelope icon"
-        />
-      </div>
-    </section>
-    <section class="gallery"></section>
+      </section>
+      <section class="projects">
+        <h2 class="projects__title">Projects</h2>
+        <ul class="cards">
+          <li class="cards__item cards__item-blog">
+            <img class="cards__image">
+            <div>
+              <h3 class="cards__title">Goat Blog</h3>
+              <p class="cards__text">I created a responsive blog website for my goat as a personal project where I am able to upload and photos and text posts. HTML, CSS, and JavaScript are used.</p>
+            </div>
+          </li>
+          <li class="cards__item">
+            <h3 class="cards__title">History Hype Podcast Landing Page</h3>
+            <p class="cards__text">Landing page for the History Hype Podcast. The user is able to made posts with links to new podcast episodes, as well as the ability to share news and images. Visitors are also able to sign up with their email to receive post notification and newsletter emails. HTML, CSS, and JavaScript are used.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
