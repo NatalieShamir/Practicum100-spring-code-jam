@@ -1,0 +1,10 @@
+.gallery__items {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery__image {
+  max-width: 20vw;
+}
