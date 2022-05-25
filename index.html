@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/vendor/normalize.css" />
-    <link rel="stylesheet" href="/pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Character Landing Page</title>
   </head>
   <body class="page">
     <header class="header">
-      tory
       <h1 class="header__title">Terrence Shlomo Tegegne</h1>
       <img
         class="header__image"
-        src="/images/Terrylaptop.png"
+        src="./images/Terrylaptop.png"
         alt="An
     illustration of Terrence Shlomo Tegegne working on his laptop, eager to
     meet the deadline"
@@ -22,39 +20,36 @@
       <nav class="header__nav">
         <ul class="header__nav-bar">
           <li class="header__nav-bar-item">
-            <a class="header__nav-bar-link" href="about.asp">About Me</a>
+            <a class="header__nav-bar-link" href="#about">About Me</a>
           </li>
           <li class="header__nav-bar-item">
-            <a class="header__nav-bar-link" href="cv.asp">CV</a>
+            <a class="header__nav-bar-link" href="#cv">CV</a>
           </li>
           <li class="header__nav-bar-item">
-            <a class="header__nav-bar-link" href="gallery.asp">Gallery</a>
+            <a class="header__nav-bar-link" href="#gallery">Gallery</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="content"></main>
-    <section class="about">
-      <h2 class="about__title">About Me</h2>
-      <h3 class="about__subtitle">Hobbies</h3>
-      <p class="about__item">I enjoy listening to podcasts on history & politics</p>
-      <p class="about__item">My favourite book genre is sci-fi</p>
-      <p class="about__item">I run a TikTok blog of my pet goat</p>
-      <p class="about__item">I volunteer at an animal shelter</p>
-      <p class="about__item">I enjoy gardening</p>
-      <p class="about__item">I am into calligraphy & embroidery (I like tedious work and pay attention to details)</p>
-      <p class="about__item">I watch "Dragon Ball Z" with my nephews & nieces after school</p>
-      <p class="about__item">I used to be a DJ</p>
-    </section>
-    <section class="cv">
-      <div class="cv__content">
-        <div class="cv__profile">
-          <img src="./images/Terrysmile.png" alt="Terry profile picture" class="cv__photo" />
-          <h2 class="cv__title">Terrence Shlomo Tegegne</h2>
-          <p class="cv__subtitle">freelance UX designer</p>
-          <div class="cv__icons">
-            <img class="cv__icon" src="./images/facebook-icon.svg" alt="Facebook icon" />
-            <img class="cv__icon" src="./images/twitter-icon.svg" alt="Facebook icon" />
+    <main class="content">
+      <section class="about" id="about">
+        <h2 class="about__title">About Me</h2>
+        <div class="about__content">
+          <img
+            class="about__image"
+            src="./images/Terry20items.png"
+            alt="An illustration of Terry's favourite items"
+          />
+          <div class="about__text">
+            <p class="about__paragraph">
+              People know me as a party animal but actually I really enjoy some
+              alone time in my garden or walking around graveyards.
+            </p>
+            <p class="about__paragraph">
+              I am adventurous and considers myself lucky. For example, I mined
+              some Bitcoin in the early 2010s and that bought me a house a few
+              years later.
+            </p>
           </div>
         </div>
         <div class="cv__main">
@@ -108,7 +103,74 @@
             </div>
           </div>
         </div>
+        <div class="cv__menu">
+          <img
+            src="./images/graduation-cap.svg"
+            class="cv__menu-icon"
+            alt="Open book icon"
+          />
+          <img
+            src="./images/envelope.svg"
+            class="cv__menu-icon"
+            alt="Envelope icon"
+          />
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery__title"></h2>
+        <p class="gallery__intro"></p>
+        <ul class="gallery__items">
+          <li class="gallery__item">
+            <img class="gallery__image" src="./images/Terrybench.png" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./images/Terrychill.png" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./images/Terrybrokencar.png" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./images/characters.png" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./images/characters_names.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="projects">
+        <h2 class="projects__title">Projects</h2>
+        <ul class="cards">
+          <li class="cards__item cards__item-blog">
+            <img class="cards__image" />
+            <div>
+              <h3 class="cards__title">Goat Blog</h3>
+              <p class="cards__text">
+                I created a responsive blog website for my goat as a personal
+                project where I am able to upload and photos and text posts.
+                HTML, CSS, and JavaScript are used.
+              </p>
+            </div>
+          </li>
+          <li class="cards__item">
+            <h3 class="cards__title">History Hype Podcast Landing Page</h3>
+            <p class="cards__text">
+              Landing page for the History Hype Podcast. The user is able to
+              made posts with links to new podcast episodes, as well as the
+              ability to share news and images. Visitors are also able to sign
+              up with their email to receive post notification and newsletter
+              emails. HTML, CSS, and JavaScript are used.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__button-close"></button>
+        <img class="popup__image" src="data" />
       </div>
+<<<<<<< HEAD
       <div class="cv__menu">
         <button id="studies-button" type="button" class="cv__link-button cv__link-button_active">
           <img src="./images/graduation-cap.svg" class="cv__menu-icon" alt="Open book icon" />
@@ -120,5 +182,8 @@
     </section>
     <section class="gallery"></section>
     <script src="./scripts/index.js"></script>
+=======
+    </div>
+>>>>>>> 4098c28cd0665456e9e854e5f0665ed479d775f8
   </body>
 </html>

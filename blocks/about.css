@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.about__title {
+  max-width: 200px;
+  margin: 0 auto 100px;
+  font-size: 40px;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: calc(100% / 2);
+  grid-template-rows: auto;
+  grid-column-gap: 48px;
+  grid-template-areas:
+    "image text"
+    "image text";
+}
+
+.about__image {
+  width: 40vw;
+}
+
+.about__paragraph {
+  max-width: 100%;
+  font-size: 20px;
+}
