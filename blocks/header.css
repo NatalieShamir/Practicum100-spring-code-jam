@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-items: space-evenly;
   margin: 35px auto 90px auto;
 }
 
@@ -41,4 +41,22 @@
 .header__image {
   max-height: 50vh;
   max-width: 40vw;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .header__title {
+    max-width: 280px;
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+
+  .header__image {
+    max-height: 60vh;
+    max-width: 60vw;
+  }
 }
