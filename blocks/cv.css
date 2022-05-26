@@ -1,23 +1,41 @@
 .cv {
   color: #ffffff;
   display: flex;
-  flex-direction: row;
-  max-width: 1280px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .cv {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 .cv__content {
   display: flex;
-  flex-direction: row;
   background-color: #000000;
   border-radius: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .cv__content {
+    flex-direction: column;
+  }
+}
+
 .cv__profile {
-  width: 300px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .cv__profile {
+    margin: 0 auto;
+  }
 }
 
 .cv__title {
@@ -38,7 +56,7 @@
 .cv__photo {
   background-color: #0882ff;
   border-radius: 100px;
-  width: 200px;
+  max-width: 200px;
 }
 
 .cv__icon {
@@ -46,7 +64,7 @@
   height: 40px;
   background-color: #0882ff;
   border-radius: 20px;
-  margin: 3px;
+  margin: 10px 10px 0;
 }
 
 .cv__icon:hover {
@@ -55,29 +73,30 @@
 }
 
 .cv__main {
-  width: 880px;
+  max-width: 880px;
   display: flex;
-  flex-direction: row;
   background-color: #666666;
   border-radius: 20px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .cv__main {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cv__column {
-  width: 440px;
-  padding: 20px 20px 0 20px;
-}
-
-.cv__menu {
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-  background-color: #ffffff;
+  max-width: 440px;
+  padding: 30px 30px;
 }
 
 .cv__headline {
   padding: 0;
   margin: 0 0 30px;
   font-size: 24px;
+  text-align: center;
 }
 
 .cv__paragraph {
@@ -88,6 +107,7 @@
 }
 
 .cv__menu {
+  max-width: 100px;
   padding: 25px 0 25px 0;
   margin-left: 20px;
   border-radius: 50px;
@@ -95,6 +115,18 @@
   background-color: #666666;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .cv__menu {
+    flex-direction: row;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 
 .cv__menu-icon {

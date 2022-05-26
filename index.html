@@ -117,8 +117,8 @@
       <section class="gallery">
         <h2 class="gallery__title"></h2>
         <p class="gallery__intro"></p>
-        <ul class="gallery__items">
-          <li class="gallery__item">
+        <ul class="gallery__items" id="galleryItems">
+          <!--li class="gallery__item">
             <img class="gallery__image" src="./images/Terrybench.png" />
           </li>
           <li class="gallery__item">
@@ -132,14 +132,18 @@
           </li>
           <li class="gallery__item">
             <img class="gallery__image" src="./images/characters_names.png" />
-          </li>
+          </li-->
         </ul>
       </section>
       <section class="projects">
         <h2 class="projects__title">Projects</h2>
         <ul class="cards">
           <li class="cards__item cards__item-blog">
-            <img class="cards__image" />
+            <img
+              src="./images/goat-blog.jpg"
+              alt="Landing page for Terry's personal goat blog"
+              class="cards__image"
+            />
             <div>
               <h3 class="cards__title">Goat Blog</h3>
               <p class="cards__text">
@@ -147,6 +151,11 @@
                 project where I am able to upload and photos and text posts.
                 HTML, CSS, and JavaScript are used.
               </p>
+              <a
+                href="https://ldennen.github.io/terry-goat-blog_spring-code-jam/"
+                class="button"
+                >Visit</a
+              >
             </div>
           </li>
           <li class="cards__item">
@@ -163,10 +172,10 @@
       </section>
     </main>
     <footer></footer>
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__container">
         <button type="button" class="popup__button-close"></button>
-        <img class="popup__image" src="data" />
+        <img class="popup__image" src="data" alt="" id="popupImage" />
       </div>
     </div>
   </body>
