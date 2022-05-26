@@ -1,4 +1,7 @@
 .gallery__items {
+  max-width: 1280px;
+  padding: 50px 20px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -6,5 +9,15 @@
 }
 
 .gallery__image {
-  max-width: 20vw;
+  max-height: 30vh;
+  max-width: 30vw;
+  padding: 24px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.gallery__image:hover {
+  transform: translate(-2px);
+  box-shadow: 3px 3px 10px #0882ff;
 }
