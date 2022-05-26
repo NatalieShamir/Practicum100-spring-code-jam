@@ -75,7 +75,8 @@
 
 @media screen and (max-width: 600px) {
   .projects__container-item-blog {
-    grid-column-start: none;
-    grid-column-end: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
