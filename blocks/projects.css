@@ -69,13 +69,23 @@
 @media screen and (max-width: 1065px) {
   .projects__container {
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
+  }
+
+  .projects__container-item-blog {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .projects__container-item {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .projects__container-item-blog {
-    grid-column-start: none;
-    grid-column-end: none;
+  .projects__container-item {
+    display: flex;
+    flex-direction: column;
   }
 }
